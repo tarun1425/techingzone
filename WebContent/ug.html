@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="ISO-8859-1">
+        <link rel="stylesheet" type="text/css" href="bootstrap.css">
+        <style> 
+            #bgimg{background-image:url("student.jpg"); }
+            #navbar_menu{font-size: 20px;color: azure;margin: 25px;;float: right;}
+            .jumbotron-fluid{padding-top: 50px;}
+            #marque{ height: 1px;border: 1px solid}
+            #category{width:25%; float: left; padding:25px; border: 2px solid;}
+            #banner{width:70%; float: left;margin-left: 2.5%;padding: 25px;border:2px solid;}
+            #containt{height: auto;width: 100%;}
+            #containt p{font-size: 20px;padding: 35px}
+            #containt h2{text-align: center;font-style: italic;font-weight: bold;color: green;}
+            #list{height: auto;width: 25%; margin-left: 550px;margin-right: 382px;}
+           <-- .h5{color: black;} -->
+                        
+        </style>
+    </head> 
+    <body>
+        <div class="jumbotron-fluid bg-dark">
+            
+                <img style=" padding-bottom:10px ;" src="img/1550957740042.png">
+                <nav id="navbar_menu" class="sticky-top nav-pills navbar-light">
+                    <ul id="navbar_menu" class="nav justify-content-end">
+                        <li class="nav-item"><a href="index.html" class="nav-link text-light">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-light">Course</a></li>
+                        <li class="nav-item"><a href="register.html" class="nav-link text-light">Register</a></li>
+                        <li class="nav-item"><a href="login.html" class="nav-link text-light">Login</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-light">About us</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-light">Contact us</a></li>
+                    </ul>
+                </nav>
+        </div>
+        <div class="container-fluid bg-info">
+            <marquee style="display:inline-block;"><h5>Welcome To Teaching zone. i Promise,You get best institute here</h5></marquee>
+
+        </div>
+        <div id="containt" class="bg">
+            <h2 id="heading">Under Graduation</h2>
+            <p><b>Under graduation:</b> purshuing a degree after the intermediate or 12th standard is called graduation. <b>graduation:</b> means compleating the degree like degree,btech,etc.</p><hr>
+            <h4 style="padding: 25px"><b>By Stream :</b></h4><hr>
+            <form action="getcollege.jsp" method="get">
+    		<table id="form" align="center" class="table table-borderless table-sm">
+    			<tr>
+					<th>College stream:</th>
+					<td>
+					<select name="ctype" placeholder="select college type" required>
+            		<option>--Please choose streams--</option>
+            		<option value="science">science</option>
+           			<option value="commerce">commerce</option>
+            		<option value="art">art</option>
+            		<option value="engineering">engineering</option>
+        			</select>
+        			</td>
+				</tr>
+				<tr >
+					<th colspan="2"><input type="submit" value="enter"></th>
+				</tr>
+    		</table>
+    		</form>
+            <hr>
+        </div>
+        <br clear="all">
+</body>
+</html>

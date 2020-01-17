@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="ISO-8859-1">
+        <title>TechingZone</title>
+        <link rel="stylesheet" type="text/css" href="bootstrap.css">
+        <style> 
+            #bgimg{background-image:url("student.jpg"); }
+            #navbar_menu{font-size: 20px;color: azure;margin: 25px;;float: right;}
+            .jumbotron-fluid{padding-top: 50px;}
+            #marque{ height: 1px;border: 1px solid}
+            #category{width:25%; float: left; padding:25px; border: 2px solid;}
+            #banner{width:70%; float: left;margin-left: 2.5%;padding: 25px;border:2px solid;}
+            #containt{height: auto;width: 100%;}
+            #containt p{font-size: 20px;padding: 35px}
+            #containt h2{text-align: center;font-style: italic;font-weight: bold;color: green;}
+            #list{height: auto;width: 25%; margin-left: 550px;margin-right: 382px;}
+            #form{width: 50%;}
+           <-- .h5{color: black;} -->
+                        
+        </style>
+    </head> 
+    <body>
+        <div class="jumbotron-fluid bg-dark">
+            
+                <img style=" padding-bottom:10px ;" src="img/1550957740042.png">
+                <nav id="navbar_menu" class="sticky-top nav-pills navbar-light">
+                    <ul id="navbar_menu" class="nav justify-content-end">
+                        <li class="nav-item"><a href="index.html" class="nav-link text-light">Home</a></li>
+                        <li class="nav-item"><a href="course.html" class="nav-link text-light">Course</a></li>
+                        <li class="nav-item"><a href="register.html" class="nav-link text-light">Register</a></li>
+                        <li class="nav-item"><a href="login.html" class="nav-link text-light">Login</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link text-light">About us</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link text-light">Contact us</a></li>
+                    </ul>
+                </nav>
+        </div>
+        <div class="container-fluid bg-info">
+            <marquee style="display:inline-block;"><h5>Welcome To Teaching zone. i Promise,You get best institute here</h5></marquee>
+        </div>
+        <div class="container-fluid">
+	<h1 align="center"><font face="times new roman" color="green" size="32">Registration</font></h1><hr>
+<p>Registration for add college in our wabsite :</p>
+	<form action="register_action.jsp" method="get">
+    <table id="form" align="center" class="table table-borderless table-sm">
+    
+    <tr >
+		<th >Login Email id:</th>
+		<td><input type="Email" name="email" required></td>
+	</tr>
+	<tr>
+		<th>Display Name:</th>
+		<td><input type="text" name="dname" required></td>
+	</tr>
+	<tr>
+		<th>Password:</th>
+		<td><input type="password" name="pwd" required></td>
+	</tr>
+	<tr>
+		<th>College/Institute/University name:</th>
+		<td><input type="text" name="cname" required></td>
+	</tr>
+	<tr>
+		<th>College stream:</th>
+		<td><select name="ctype" required>
+            <option>--Please choose--</option>
+            <option value="science">science</option>
+            <option value="commerce">commerce</option>
+            <option value="art">art</option>
+            <option value="engineering">engineering</option>
+        </select></td>
+	</tr>
+	<tr>
+		<th>College program:</th>
+        <td><select name="cp" required>
+            <option>--Please choose--</option>
+            <option value="UG">UG</option>
+            <option value="PG">PG</option>
+        </select></td>
+	</tr>
+	<tr>
+		<th>Contect Name:</th>
+		<td><input type="text" name="contactname" required></td>
+	</tr>
+	<tr>
+		<th>Address:</th>
+		<td><textarea rows="5" name="address" required></textarea></td>
+	</tr>
+	<tr>
+		<th>City:</th>
+        <td><select name="city" required>
+            <option>--Please choose an city--</option>
+            <option value="jabalpur">jabalpur</option>
+            <option value="narsinghpur">narsinghpur</option>
+        </select></td>
+	</tr>
+	<tr>
+		<th>Pin-code:</th>
+		<td><input type="number" name="pcode" required></td>
+	</tr>
+	<tr>
+		<th>Phone No:</th>
+		<td><input type="phone" name="phone" required></td>
+	</tr>
+    <tr>
+        <th>Wabsite:</th>
+        <td><input type="url" name="url" required></td>
+    </tr>
+    <tr>
+        <th><input type="checkbox" name="agree" value="agree" required></th>
+        <td>i agree to be for service related information and pramotion.</td>
+    </tr>
+	<tr >
+		<th colspan="2"><input type="submit" value="Register" ></th>
+	</tr>
+    </table>
+    </form><hr></div>
+</html>
